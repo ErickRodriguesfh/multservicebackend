@@ -1,5 +1,4 @@
-﻿
-using MultService.Application.UseCases;
+﻿using MultService.Application.UseCases.Contractor;
 
 namespace MultService.Application.UseCasesImplementation
 {

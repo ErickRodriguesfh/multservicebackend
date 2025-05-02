@@ -1,5 +1,5 @@
 using MultService.API.Configuration;
-using MultService.Infrastructure.Extensions;
+
 
 var builder = WebApplication.CreateBuilder(args);
 

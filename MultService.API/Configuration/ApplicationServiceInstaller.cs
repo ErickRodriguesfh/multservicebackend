@@ -1,5 +1,4 @@
-﻿
-using MultService.Application.UseCases;
+﻿using MultService.Application.UseCases.Contractor;
 using MultService.Application.UseCasesImplementation;
 
 namespace MultService.API.Configuration
