@@ -1,4 +1,5 @@
 using MultService.API.Configuration;
+using MultService.Infrastructure.Migrations;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,4 +21,13 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+MigrateDatabase();
+
 app.Run();
+
+void MigrateDatabase()
+{
+    var connectionString = builder.Configuration.GetConnectionString("Connection");
+    var serviceScope = app.Services.GetRequiredService<IServiceScopeFactory>().CreateScope();
+    DatabaseMigration.MigrationDatabase(serviceScope.ServiceProvider);
+}

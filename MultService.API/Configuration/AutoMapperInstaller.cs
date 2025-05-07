@@ -2,7 +2,7 @@
 
 namespace MultService.API.Configuration
 {
-    public interface AutoMapperInstaller : IServiceInstaller
+    public class AutoMapperInstaller : IServiceInstaller
     {
         public void Install(IServiceCollection services, IConfiguration configuration)
         {
