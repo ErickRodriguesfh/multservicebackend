@@ -6,6 +6,6 @@ namespace MultService.Domain.RepositoryInterface
 {
     public interface ISpecialtyRepository
     {
-        Task<List<Specialty>> GetSpecialtiesAsync();
+        Task<IEnumerable<Specialty>> GetSpecialtiesAsync();
     }
 }

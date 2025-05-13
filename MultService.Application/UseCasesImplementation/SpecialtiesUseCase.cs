@@ -18,7 +18,7 @@ namespace MultService.Application.UseCasesImplementation
             this._mapper = mapper;
         }
 
-        public async Task<List<SpecialtyResponseDTO>> getSpecialtiesAsync()
+        public async Task<IEnumerable<SpecialtyResponseDTO>> getSpecialtiesAsync()
         {
             var specialties = await _specialityRepository.GetSpecialtiesAsync();
             return _mapper.Map<List<SpecialtyResponseDTO>>(specialties);

@@ -12,9 +12,10 @@ namespace MultService.Infrastructure.RepositoryImplementation.Specialty
 
         public SpecialtyRepository(MultServiceDbContext context) => _context = context;
 
-        public async Task<List<Domain.Entities.Specialty>> GetSpecialtiesAsync()
+        public async Task<IEnumerable<Domain.Entities.Specialty>> GetSpecialtiesAsync()
         {
            return await _context.Specialties
+                .AsNoTracking()
                 .ToListAsync();
         }
     }

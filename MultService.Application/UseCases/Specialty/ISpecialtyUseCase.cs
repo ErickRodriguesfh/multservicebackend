@@ -5,6 +5,6 @@ namespace MultService.Application.UseCases.Specialty
 {
     public interface ISpecialtyUseCase
     {
-        Task<List<SpecialtyResponseDTO>> getSpecialtiesAsync();
+        Task<IEnumerable<SpecialtyResponseDTO>> getSpecialtiesAsync();
     }
 }

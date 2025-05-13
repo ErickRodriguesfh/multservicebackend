@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿
 using Microsoft.AspNetCore.Mvc;
 using MultService.Application.Communication.Response.SpecialtyDTOs;
 using MultService.Application.UseCases.Specialty;
